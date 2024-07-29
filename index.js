@@ -68,7 +68,7 @@
 //     distancia: 150000000,
 //     vecinoFront: 'Venus',
 //     vecinoBack: 'Marte',
-//     composiciónAtmos: ['nitrógeno','oxígeno','argón'],
+//     composicionAtmos: ['nitrógeno','oxígeno','argón'],
 //     saludar: function (){
 //         console.log("Hola, soy el planeta tierra");
 //     } 
@@ -85,5 +85,17 @@
 // KATA #06--Basándote en la especificaciones del objeto anterior crea la clase planeta y haz instancias de, 
 // al menos dos planetas, más abajo te especifico las propiedades: 🪐🐱‍🚀
 
+class planeta{
+    constructor(nombre, distancia, vecinoFront, vecinoBack, satelite){
+        this.nombre='Venus'
+        this.distancia=108000000
+        this.vecinoFront='Tierra'
+        this.vecinoBack='Mercurio'
+        this.satelite='No tiene'
+    }
 
+    saludar(){
+        console.log("Hola, soy el planeta "+this.nombre);
+    }
+}
 
